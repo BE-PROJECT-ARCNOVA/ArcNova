@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://www.versatilehack.com/background1.gif') no-repeat center center/cover;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  height: 100%;
+  position: relative;
+}
+
+.subtitle{
+  color: white;  
+}
+
+/* Background Overlay */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Glassmorphic Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 45%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Input Section Card */
+.input-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Input Box */
+.input-box {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* Generate Button */
+.generate-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+  background-color: #333;
+}
+
+/* Results Container */
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  gap: 20px;
+}
+
+/* Diagram Box */
+.diagram-box {
+  width: 35%;
+  height: 740px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.diagram-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.diagram {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Steps Box */
+.steps-box {
+  width: 65%; /* 65% width for the implementation steps box */
+  height: 700px; /* Fixed height for the box */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds box */
+  overflow-x: hidden;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align the content */
+}
+
+.steps {
+  color: white;
+  white-space: pre-wrap;
+  list-style-type: disc; /* Set list style */
+  padding-left: 20px; /* Indent the list for alignment */
+  text-align: left;
+}
+
+/* Markdown Styling */
+.steps h1, .steps h2, .steps h3 {
+  color: #e3e3e3;
+  margin-top: 15px;
+}
+
+.steps ul, .steps ol {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
